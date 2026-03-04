@@ -1,3 +1,4 @@
+// Variables declarades dins de l'Apps Script a Configuración del proyecto / Propiedades de secuencia de comandos
 const BASE_URL = PropertiesService.getScriptProperties().getProperty("BASE_URL");
 const API_KEY = PropertiesService.getScriptProperties().getProperty("API_KEY");
 
