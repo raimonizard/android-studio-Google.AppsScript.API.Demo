@@ -21,7 +21,9 @@ interface AssistenciaApiService {
     @GET("exec")
     suspend fun getDadesArc(
         @Query("apiKey") apiKey: String, // Envia la API_KEY que consta a secrets.properties
-        @Query("type") type: String = "arc" // A través d'un atribut com 'type' podem atacar a diferents endpoints de tipus GET. Només cal capturar l'atribut e.parameter.type des de la funció doGet(e) de JS i respondre amb les dades desitjades.
+        // A través d'un atribut com 'type' podem atacar a diferents endpoints de tipus GET. Només cal capturar l'atribut e.parameter.type
+        //      des de la funció doGet(e) de JS i respondre amb les dades desitjades.
+        @Query("type") type: String = "arc"
     ): GetResponse<List<Arc>>
 
     /**

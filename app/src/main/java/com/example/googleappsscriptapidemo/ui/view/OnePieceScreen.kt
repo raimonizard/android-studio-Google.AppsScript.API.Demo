@@ -70,7 +70,7 @@ fun OnePieceScreen(
                 // Quan hi hagi algun error a la resposta de la API, mostrarem un error.
                 error != null -> {
                     Text(
-                        text = "❌ Error: $error",
+                        text = "Error: $error",
                         color = MaterialTheme.colorScheme.error
                     )
                 }

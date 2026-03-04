@@ -1,4 +1,4 @@
-package com.itb.ihub_login.api
+package com.example.googleappsscriptapidemo.api
 
 /* Per tal de poder importar BuildConfig, serà necessari fer:
     1. Editar app/build.gradle.kts i afegir:
