@@ -36,14 +36,17 @@ function doGet(e) {
 /**
  * Funció de test de la funció doGet
  */
+const API_KEY = PropertiesService.getScriptProperties().getProperty("API_KEY");
+
 function testGet() {
   const mockEventData = {
     parameter: {
+      apiKey: API_KEY,
       type: "arc"
     }
   };
 
   Logger.log(BASE_URL);
   Logger.log("Test: Obtenir DADES");
-  Logger.log(doGet().getContent());
+  Logger.log(doGet(mockEventData).getContent());
 }
