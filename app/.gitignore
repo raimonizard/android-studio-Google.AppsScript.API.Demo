@@ -1,2 +1,4 @@
 /build
-secrets.properties
+/secrets.properties
+local.defaults.properties
+local.properties
